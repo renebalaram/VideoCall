@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VideoCall" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conference ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEN-jE-j5L">
+                                <rect key="frame" x="152" y="96" width="110" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M5f-sH-VWH">
+                                <rect key="frame" x="152" y="125" width="110" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBf-eP-ELf">
+                                <rect key="frame" x="130" y="163" width="154" height="30"/>
+                                <state key="normal" title="Join to the conference"/>
+                                <connections>
+                                    <action selector="didJoinVideoCallPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sNG-bM-Y6j"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LBf-eP-ELf" firstAttribute="top" secondItem="M5f-sH-VWH" secondAttribute="bottom" constant="8" id="03B-uQ-PbC"/>
+                            <constraint firstItem="SEN-jE-j5L" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1nB-fD-TMU"/>
+                            <constraint firstItem="M5f-sH-VWH" firstAttribute="top" secondItem="SEN-jE-j5L" secondAttribute="bottom" constant="8" id="dX3-tE-ITi"/>
+                            <constraint firstItem="LBf-eP-ELf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pVI-IN-Y0j"/>
+                            <constraint firstItem="SEN-jE-j5L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="76" id="vAQ-sb-RPB"/>
+                            <constraint firstItem="M5f-sH-VWH" firstAttribute="trailing" secondItem="SEN-jE-j5L" secondAttribute="trailing" id="xQL-sa-uM8"/>
+                            <constraint firstItem="M5f-sH-VWH" firstAttribute="leading" secondItem="SEN-jE-j5L" secondAttribute="leading" id="zbY-sL-8M1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="conferenceIDTextField" destination="M5f-sH-VWH" id="zyZ-RV-1rm"/>
+                        <segue destination="EFc-b5-0Qq" kind="presentation" identifier="goToVideoCall" id="FQm-IV-e2c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Video Chat View Controller-->
+        <scene sceneID="RsT-nl-6K4">
+            <objects>
+                <viewController id="EFc-b5-0Qq" customClass="VideoChatViewController" customModule="VideoCall" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v4L-sM-lhK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CpH-BD-2qf">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHF-vV-KzH">
+                                        <rect key="frame" x="171.66666666666666" y="666" width="70" height="30"/>
+                                        <state key="normal" title="Finish Call"/>
+                                        <connections>
+                                            <action selector="finishVideoCall:" destination="EFc-b5-0Qq" eventType="touchUpInside" id="CBw-ja-JYz"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0jn-nr-Ccb">
+                                        <rect key="frame" x="301" y="514" width="105" height="142"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="142" id="7NV-TB-WSD"/>
+                                            <constraint firstAttribute="width" constant="105" id="nUq-0L-gKH"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4qQ-gd-EQe">
+                                        <rect key="frame" x="87" y="220" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Aq-J4-alj">
+                                        <rect key="frame" x="184" y="380" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="toggle:" destination="EFc-b5-0Qq" eventType="touchUpInside" id="3e5-PE-nGp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="FHF-vV-KzH" firstAttribute="centerX" secondItem="CpH-BD-2qf" secondAttribute="centerX" id="M3o-Sn-hoM"/>
+                                    <constraint firstAttribute="trailing" secondItem="0jn-nr-Ccb" secondAttribute="trailing" constant="8" id="N8l-uj-m7W"/>
+                                    <constraint firstAttribute="bottom" secondItem="FHF-vV-KzH" secondAttribute="bottom" constant="20" id="Y16-im-e0N"/>
+                                    <constraint firstItem="FHF-vV-KzH" firstAttribute="top" secondItem="0jn-nr-Ccb" secondAttribute="bottom" constant="10" id="exK-0k-bGd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CpH-BD-2qf" firstAttribute="top" secondItem="j7f-sK-9fi" secondAttribute="top" id="2va-mH-KMw"/>
+                            <constraint firstItem="CpH-BD-2qf" firstAttribute="leading" secondItem="j7f-sK-9fi" secondAttribute="leading" id="8Wp-nY-KC8"/>
+                            <constraint firstItem="j7f-sK-9fi" firstAttribute="bottom" secondItem="CpH-BD-2qf" secondAttribute="bottom" id="F3c-Ox-5Td"/>
+                            <constraint firstItem="j7f-sK-9fi" firstAttribute="trailing" secondItem="CpH-BD-2qf" secondAttribute="trailing" id="y2q-9Z-71V"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="j7f-sK-9fi"/>
+                    </view>
+                    <connections>
+                        <outlet property="bigVideoPlayer" destination="CpH-BD-2qf" id="rYX-t4-73r"/>
+                        <outlet property="smallVideoPlayer" destination="0jn-nr-Ccb" id="yH0-pL-qq2"/>
+                        <outlet property="toggleView" destination="4qQ-gd-EQe" id="Jtd-yd-wpX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tx0-d0-EWV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="981.60000000000002" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
