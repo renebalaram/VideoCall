@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		84529B1420FFD939008EA6A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84529B1320FFD939008EA6A6 /* AppDelegate.swift */; };
-		84529B1620FFD939008EA6A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84529B1520FFD939008EA6A6 /* ViewController.swift */; };
+		84529B1620FFD939008EA6A6 /* CallToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84529B1520FFD939008EA6A6 /* CallToViewController.swift */; };
 		84529B1920FFD939008EA6A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84529B1720FFD939008EA6A6 /* Main.storyboard */; };
 		84529B1C20FFD939008EA6A6 /* VideoCall.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84529B1A20FFD939008EA6A6 /* VideoCall.xcdatamodeld */; };
 		84529B1E20FFD947008EA6A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84529B1D20FFD947008EA6A6 /* Assets.xcassets */; };
@@ -17,6 +17,12 @@
 		84529B3720FFD948008EA6A6 /* VideoCallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84529B3620FFD948008EA6A6 /* VideoCallUITests.swift */; };
 		84529B4520FFDA19008EA6A6 /* VideoChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84529B4420FFDA19008EA6A6 /* VideoChatViewController.swift */; };
 		84D7D70D2101504A005DCA07 /* VideoStreamer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7D70C2101504A005DCA07 /* VideoStreamer.swift */; };
+		84D7D70F21027564005DCA07 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7D70E21027564005DCA07 /* VideoPlayer.swift */; };
+		84D7D71121027FD0005DCA07 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7D71021027FD0005DCA07 /* LogInViewController.swift */; };
+		84D7D7152102834C005DCA07 /* FireBaseConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7D7142102834C005DCA07 /* FireBaseConnector.swift */; };
+		84D7D7172102855E005DCA07 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84D7D7162102855E005DCA07 /* GoogleService-Info.plist */; };
+		84D7D719210286F9005DCA07 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7D718210286F9005DCA07 /* Users.swift */; };
+		84D7D71C2102925F005DCA07 /* LoginError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7D71B2102925F005DCA07 /* LoginError.swift */; };
 		E35E4B8F41BF3493FAB16D5C /* Pods_VideoCall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B43C014BD9ED17E692CCF9 /* Pods_VideoCall.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +48,7 @@
 		44B43C014BD9ED17E692CCF9 /* Pods_VideoCall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoCall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84529B1020FFD939008EA6A6 /* VideoCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84529B1320FFD939008EA6A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84529B1520FFD939008EA6A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84529B1520FFD939008EA6A6 /* CallToViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallToViewController.swift; sourceTree = "<group>"; };
 		84529B1820FFD939008EA6A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84529B1B20FFD939008EA6A6 /* VideoCall.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VideoCall.xcdatamodel; sourceTree = "<group>"; };
 		84529B1D20FFD947008EA6A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,6 +62,12 @@
 		84529B3820FFD948008EA6A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84529B4420FFDA19008EA6A6 /* VideoChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoChatViewController.swift; sourceTree = "<group>"; };
 		84D7D70C2101504A005DCA07 /* VideoStreamer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoStreamer.swift; sourceTree = "<group>"; };
+		84D7D70E21027564005DCA07 /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
+		84D7D71021027FD0005DCA07 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		84D7D7142102834C005DCA07 /* FireBaseConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseConnector.swift; sourceTree = "<group>"; };
+		84D7D7162102855E005DCA07 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		84D7D718210286F9005DCA07 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		84D7D71B2102925F005DCA07 /* LoginError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginError.swift; sourceTree = "<group>"; };
 		ADC45B21FE9F9A6C84B12CA8 /* Pods-VideoCall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoCall.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoCall/Pods-VideoCall.debug.xcconfig"; sourceTree = "<group>"; };
 		AE8FDD02527F91970496301B /* Pods_VideoCallUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoCallUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB6290B8176958D693D3DDD3 /* Pods_VideoCallTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoCallTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,15 +134,16 @@
 		84529B1220FFD939008EA6A6 /* VideoCall */ = {
 			isa = PBXGroup;
 			children = (
+				84D7D71A2102870A005DCA07 /* Models */,
+				84D7D71221028016005DCA07 /* ViewController */,
+				84D7D7132102805F005DCA07 /* Services */,
 				84529B1320FFD939008EA6A6 /* AppDelegate.swift */,
-				84529B1520FFD939008EA6A6 /* ViewController.swift */,
 				84529B1720FFD939008EA6A6 /* Main.storyboard */,
 				84529B1D20FFD947008EA6A6 /* Assets.xcassets */,
 				84529B1F20FFD947008EA6A6 /* LaunchScreen.storyboard */,
 				84529B2220FFD947008EA6A6 /* Info.plist */,
+				84D7D7162102855E005DCA07 /* GoogleService-Info.plist */,
 				84529B1A20FFD939008EA6A6 /* VideoCall.xcdatamodeld */,
-				84529B4420FFDA19008EA6A6 /* VideoChatViewController.swift */,
-				84D7D70C2101504A005DCA07 /* VideoStreamer.swift */,
 			);
 			path = VideoCall;
 			sourceTree = "<group>";
@@ -151,6 +164,35 @@
 				84529B3820FFD948008EA6A6 /* Info.plist */,
 			);
 			path = VideoCallUITests;
+			sourceTree = "<group>";
+		};
+		84D7D71221028016005DCA07 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84529B1520FFD939008EA6A6 /* CallToViewController.swift */,
+				84529B4420FFDA19008EA6A6 /* VideoChatViewController.swift */,
+				84D7D71021027FD0005DCA07 /* LogInViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		84D7D7132102805F005DCA07 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				84D7D70C2101504A005DCA07 /* VideoStreamer.swift */,
+				84D7D70E21027564005DCA07 /* VideoPlayer.swift */,
+				84D7D7142102834C005DCA07 /* FireBaseConnector.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		84D7D71A2102870A005DCA07 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84D7D718210286F9005DCA07 /* Users.swift */,
+				84D7D71B2102925F005DCA07 /* LoginError.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		E8DD291A263B5CA7F2EAF888 /* Pods */ = {
@@ -270,6 +312,7 @@
 			files = (
 				84529B2120FFD947008EA6A6 /* LaunchScreen.storyboard in Resources */,
 				84529B1E20FFD947008EA6A6 /* Assets.xcassets in Resources */,
+				84D7D7172102855E005DCA07 /* GoogleService-Info.plist in Resources */,
 				84529B1920FFD939008EA6A6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,13 +359,21 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-VideoCall/Pods-VideoCall-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/HaishinKit/HaishinKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Logboard/Logboard.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HaishinKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Logboard.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -336,10 +387,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84529B1620FFD939008EA6A6 /* ViewController.swift in Sources */,
+				84529B1620FFD939008EA6A6 /* CallToViewController.swift in Sources */,
 				84529B1C20FFD939008EA6A6 /* VideoCall.xcdatamodeld in Sources */,
+				84D7D71C2102925F005DCA07 /* LoginError.swift in Sources */,
+				84D7D70F21027564005DCA07 /* VideoPlayer.swift in Sources */,
+				84D7D71121027FD0005DCA07 /* LogInViewController.swift in Sources */,
 				84529B4520FFDA19008EA6A6 /* VideoChatViewController.swift in Sources */,
+				84D7D719210286F9005DCA07 /* Users.swift in Sources */,
 				84529B1420FFD939008EA6A6 /* AppDelegate.swift in Sources */,
+				84D7D7152102834C005DCA07 /* FireBaseConnector.swift in Sources */,
 				84D7D70D2101504A005DCA07 /* VideoStreamer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

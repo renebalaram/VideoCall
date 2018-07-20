@@ -8,9 +8,10 @@
 
 import UIKit
 import CoreData
-import AVFoundation
 import Logboard
+import AVFoundation
 import HaishinKit
+import Firebase
 
 let logger: Logboard = Logboard.with("com.rene.api.VideoCall")
 
@@ -31,6 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             try session.setActive(true)
         } catch {
         }
+        FirebaseApp.configure()
+        
         return true
     }
 
